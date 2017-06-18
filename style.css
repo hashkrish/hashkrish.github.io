@@ -10,8 +10,12 @@
 }
 .name {
     align-content: center;
-    
-    
+    font-size: 300%;
+    font-weight: 400
+}
+h2 {
+    font-weight: 500;
+    font-size: 200%;
 }
 h4 {
     font-weight: 200;
@@ -23,16 +27,22 @@ h4 {
 h3 {
     align-content: center;
     text-align: center;
+    font-size: 125%;
+    font-weight: 600;
+    padding-bottom: 0px 0px;
     
 }
 li { 
     align-items: center; 
     align-content: center; 
     align-self: auto; 
+    font-weight: 300;
+    font-size: 100%;
     
 }
 body {
-    background-image: radial-gradient(#4286f4,#0e274f)
+    background-image: radial-gradient(#0148ba,#0e274f);
+    
 }
 .academic {
     
@@ -40,4 +50,9 @@ body {
 }
 .skill {
     padding: 1% inherit;
+}
+p {
+    padding: 0px 15%;
+    min-width: ;
+    text-align: center;
 }
