@@ -1,12 +1,43 @@
 * {
     font-family: century gothic;
+    color: aliceblue;
+    border: 0px solid #000;
+    text-align: center;
+    align-items: center;
+    padding:inherit;
+    background-image:image("\image\universe.jpg");
+    z-index: auto;
 }
 .name {
     align-content: center;
+    
+    
 }
 h4 {
     font-weight: 200;
-    font-display: auto;
     font-stretch: expanded;
+    font-size-adjust: auto;
+    align-items: center;
     
+}
+h3 {
+    align-content: center;
+    text-align: center;
+    
+}
+li { 
+    align-items: center; 
+    align-content: center; 
+    align-self: auto; 
+    
+}
+body {
+    background-image: radial-gradient(#4286f4,#0e274f)
+}
+.academic {
+    border: 1px solid #fff;
+    padding: 0.1% inherit;
+}
+.skill {
+    padding: 1% inherit;
 }
