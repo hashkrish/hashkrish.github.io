@@ -1,7 +1,7 @@
 * {
-    font-family: century gothic,Roboto;
+    font-family: century gothic,Roboto,sans-serif;
     color: aliceblue;
-    border: 0px solid #000;
+/*    border: 1px solid #FFF;*/
     text-align: center;
     align-items: center;
     padding:inherit;
@@ -13,9 +13,16 @@
     font-size: 300%;
     font-weight: 400
 }
+h4 {
+    font-size: 190%;
+    font-style: italic;
+/*    background-color:dimgrey*/
+}
 h2 {
     font-weight: 500;
     font-size: 200%;
+    background-color: rgba(0,0,0,.5);
+    display: block;
 }
 h4 {
     font-weight: 200;
@@ -38,21 +45,98 @@ li {
     align-self: auto; 
     font-weight: 300;
     font-size: 100%;
+    list-style: none;
     
 }
 body {
-    background-image: radial-gradient(#0148ba,#0e274f);
-    
+    background-image:url(image/universe_e.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-size: cover;
+    align-content: center;
+    margin: inherit 20%;
+}
+.academics{
+/*    display: inline-block;*/
+    background-color: rgba(0,0,0,.5);
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .academic {
     
     padding: 0.1% inherit;
+    display: inline-block;
+    margin: inherit 50%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.academics h2 {
+    margin: 0px 0px;
+}
+.skills {
+    display:inline-grid;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-content: center;
+    
+}
+.skills h2 {
+    display: block;
+    margin: 0px 0px 0px 0px;
+    align-self: center;
+    text-align: inherit;
+    text-align-last: center;
+    background-color: rgba(0,0,0,0.5);
+    
 }
 .skill {
     padding: 1% inherit;
+    width: 33%;
+    height: 75%;
+/*    margin: ;*/
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display:inline-block;
+    text-align: center;
+    background-color: rgba(0,0,0,.5);
+    min-width: 250px;
+    min-height: 
+    
+    
 }
 p {
     padding: 0px 15%;
     min-width: ;
     text-align: center;
+}
+.projects {
+    background-color: rgba(0,0,0,.5);
+    background-origin:inherit;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    z-index: auto;
+    opacity: 50;
+    
+}
+.project {
+    
+}
+.projects h2{
+    display: block;
+    margin: 0px 0px;
+}
+.reference {
+    margin-left: 5%;
+    margin-right: 5%;
+    background: rgba(0,0,0,0.5);
+}
+.contact {
+    margin-left: 5%;
+    margin-right: 5%;
+    background: rgba(0,0,0,0.5);
 }
