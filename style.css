@@ -56,7 +56,7 @@ body {
     background-size: cover;
     align-content: center;
     margin: inherit 20%;
-    display: inline-block;
+    display: inline;
 }
 .academics{
 /*    display: inline-block;*/
