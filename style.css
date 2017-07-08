@@ -1,7 +1,7 @@
 * {
     font-family: century gothic,Roboto,sans-serif;
     color: aliceblue;
-/*    border: 1px solid #FFF;*/
+    /*border: 1px solid #FFF;*/
     text-align: center;
     align-items: center;
     padding:inherit;
@@ -76,7 +76,7 @@ body {
     margin: 0px 0px;
 }
 .skills {
-    display:inline-grid;
+    display:inline-block;
     margin-left: 5%;
     margin-right: 5%;
     align-content: center;
