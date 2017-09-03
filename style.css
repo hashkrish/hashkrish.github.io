@@ -42,10 +42,11 @@ h3 {
 li { 
     align-items: center; 
     align-content: center; 
-    align-self: auto; 
+    align-self: center; 
     font-weight: 300;
     font-size: 100%;
     list-style: none;
+    
     
 }
 body {
@@ -92,7 +93,7 @@ body {
     
 }
 .skill {
-    padding: 1% inherit;
+    padding: 1% auto;
     width: 33%;
     height: 75%;
 /*    margin: ;*/
@@ -100,7 +101,7 @@ body {
     margin-right: 5%;
 /*    margin-top: 5%;*/
     margin-bottom: 5%;
-    display:inline-block;
+    display:inherit;
     text-align: center;
     background-color: rgba(0,0,0,.5);
     min-width: 250px;
