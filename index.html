@@ -1,30 +1,169 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Santhana Krishnan</title>
-  <!-- <meta name="description" content="A simple HTML5 Template for new projects."> -->
-  <!-- <meta name="author" content="SitePoint"> -->
-
-  <!-- <meta property="og:title" content="A Basic HTML5 Template"> -->
-  <!-- <meta property="og:type" content="website"> -->
-  <!-- <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/"> -->
-  <!-- <meta property="og:description" content="A simple HTML5 Template for new projects."> -->
-  <!-- <meta property="og:image" content="image.png"> -->
-
-  <!-- <link rel="icon" href="/favicon.ico"> -->
-  <!-- <link rel="icon" href="/favicon.svg" type="image/svg+xml"> -->
-  <!-- <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
-
-  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
-
+  <meta name="theme-color" content="#f6f5f1">
+  <meta name="description" content="Santhana Krishnan is a software developer with 5+ years of experience, pursuing forward deployed engineering roles across integrations and customer workflows.">
+  <meta property="og:title" content="Santhana Krishnan — Forward Deployed Engineer">
+  <meta property="og:description" content="Software developer with 5+ years of experience building practical tools, integrations, and workflow-focused software.">
+  <title>Santhana Krishnan — Forward Deployed Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --paper:#f6f5f1; --ink:#171a18; --muted:#737873; --line:#dcded8; --green:#b8f36a; --dark:#1b211e; --mono:ui-monospace,SFMono-Regular,monospace; --sans:'DM Sans',sans-serif; --display:'Manrope',sans-serif; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sans); -webkit-font-smoothing:antialiased; }
+    a { color:inherit; text-decoration:none; }
+    a:focus-visible { outline:3px solid #79a944; outline-offset:4px; }
+    .skip-link { position:absolute; top:-60px; left:18px; z-index:10; background:var(--ink); color:white; padding:12px 16px; border-radius:3px; }
+    .skip-link:focus { top:12px; }
+    .shell { width:min(1140px, calc(100% - 64px)); margin-inline:auto; }
+    .topbar { height:82px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--line); }
+    .brand { display:flex; align-items:center; gap:11px; font-weight:700; letter-spacing:-.04em; font-size:16px; }
+    .brand-mark { width:30px; height:30px; display:grid; place-items:center; background:var(--ink); color:var(--green); border-radius:50%; font-family:var(--display); font-size:14px; }
+    nav { display:flex; align-items:center; gap:34px; color:#555b56; font-size:13px; }
+    nav a:hover, .text-link:hover { color:#638c2d; }
+    .nav-cta { padding:11px 16px; border:1px solid var(--ink); border-radius:4px; color:var(--ink); transition:.2s; }
+    .nav-cta:hover { background:var(--ink); color:white; }
+    .hero { min-height:670px; display:grid; grid-template-columns:1.18fr .82fr; align-items:center; gap:70px; padding-block:85px 96px; }
+    .eyebrow { display:flex; align-items:center; gap:10px; font:11px var(--mono); text-transform:uppercase; letter-spacing:.1em; color:#696f69; }
+    .status-dot { height:8px; width:8px; border-radius:50%; background:#77b43c; box-shadow:0 0 0 4px #77b43c20; }
+    h1 { margin:25px 0 20px; font:600 clamp(52px,7vw,88px)/.99 var(--display); letter-spacing:-.078em; }
+    h1 span { color:#777d76; }
+    .hero-copy { max-width:550px; font-size:17px; line-height:1.75; color:#646a64; }
+    .hero-actions { display:flex; align-items:center; gap:22px; margin-top:34px; }
+    .button { display:inline-flex; align-items:center; justify-content:center; gap:12px; min-height:50px; padding:0 19px; border-radius:4px; background:var(--ink); color:white; font-size:13px; font-weight:600; transition:transform .2s,background .2s; }
+    .button:hover { background:#303a33; transform:translateY(-2px); }
+    .button .arrow { font-size:18px; line-height:0; }
+    .text-link { font-size:13px; font-weight:600; transition:color .2s; }
+    .hero-art { position:relative; min-height:420px; display:grid; place-items:center; }
+    .orbit { width:min(100%,390px); aspect-ratio:1; border:1px solid #d4d8cf; border-radius:50%; position:relative; display:grid; place-items:center; }
+    .orbit:before,.orbit:after { content:""; position:absolute; border:1px solid #d4d8cf; border-radius:50%; }
+    .orbit:before { inset:10%; }.orbit:after { inset:22%; }
+    .core { width:145px; height:145px; display:grid; place-items:center; border-radius:50%; background:var(--green); font:800 53px var(--display); letter-spacing:-.1em; transform:rotate(-8deg); box-shadow:0 18px 44px #8ca76c33; z-index:1; }
+    .orbit-tag { position:absolute; z-index:2; padding:10px 13px; border:1px solid var(--line); border-radius:5px; background:var(--paper); font:10px var(--mono); color:#5f655f; letter-spacing:.03em; box-shadow:0 6px 20px #222208; }
+    .tag-one { top:53px; left:7px; }.tag-two { right:-10px; top:139px; }.tag-three { bottom:51px; left:17px; }
+    .orbit-star { position:absolute; top:20px; right:65px; color:#81956a; font-size:25px; }
+    .ticker { background:var(--dark); color:#d9dfd8; }
+    .ticker-inner { min-height:94px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+    .ticker-label { font:10px var(--mono); text-transform:uppercase; letter-spacing:.1em; color:#a2aaa2; }
+    .ticker-item { display:flex; gap:10px; align-items:center; font-size:13px; color:#e5e9e3; }
+    .ticker-item span { color:var(--green); font-size:15px; }
+    section.content-section { padding-block:112px; border-bottom:1px solid var(--line); }
+    .section-head { display:grid; grid-template-columns:.65fr 1.35fr; gap:60px; margin-bottom:58px; }
+    .section-kicker { font:11px var(--mono); letter-spacing:.08em; text-transform:uppercase; color:#7a8079; padding-top:8px; }
+    .section-title { max-width:690px; margin:0; font:600 clamp(34px,4.5vw,55px)/1.12 var(--display); letter-spacing:-.06em; }
+    .section-title em { color:#868c85; font-style:normal; }
+    .about-grid { display:grid; grid-template-columns:.65fr 1.35fr; gap:60px; }
+    .about-aside { border-top:1px solid var(--line); padding-top:19px; color:#6f756e; font-size:13px; line-height:1.7; }
+    .about-main { font-size:17px; line-height:1.8; color:#525852; max-width:720px; }
+    .about-main p { margin:0 0 18px; }.about-main p:last-child { margin-bottom:0; }
+    .principles { display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid var(--line); }
+    .principle { padding:25px 28px 10px 0; }.principle + .principle { border-left:1px solid var(--line); padding-left:28px; }
+    .principle-number { font:11px var(--mono); color:#88a35e; }
+    .principle h3 { margin:25px 0 11px; font:600 18px var(--display); letter-spacing:-.04em; }
+    .principle p { margin:0; max-width:290px; color:#737973; font-size:13px; line-height:1.7; }
+    .project-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:15px; }
+    .project-card { min-height:280px; padding:28px; border:1px solid var(--line); border-radius:5px; display:flex; flex-direction:column; background:#faf9f6; transition:transform .2s,border-color .2s; }
+    .project-card:hover { transform:translateY(-3px); border-color:#adb5a5; }
+    .project-type { font:10px var(--mono); color:#81877f; text-transform:uppercase; letter-spacing:.08em; }
+    .project-card h3 { margin:29px 0 12px; font:600 22px/1.2 var(--display); letter-spacing:-.05em; }
+    .project-card p { margin:0 0 24px; color:#697069; font-size:13px; line-height:1.75; }
+    .project-stack { display:flex; flex-wrap:wrap; gap:7px; margin-top:auto; }
+    .project-stack span { padding:6px 8px; border-radius:3px; background:#e9ebe4; color:#596157; font:10px var(--mono); }
+    .project-link { display:inline-flex; align-items:center; gap:8px; margin-top:auto; font-size:12px; font-weight:600; }
+    .project-link:hover { color:#638c2d; }
+    .timeline { border-top:1px solid var(--line); }
+    .timeline-row { display:grid; grid-template-columns:.65fr 1.35fr; gap:60px; padding:27px 0; border-bottom:1px solid var(--line); }
+    .timeline-date { font:11px var(--mono); color:#787f77; }
+    .timeline-body h3 { margin:0 0 4px; font:600 19px var(--display); letter-spacing:-.04em; }
+    .timeline-org { color:#7a8079; font-size:12px; }
+    .timeline-body p { margin:14px 0 0; max-width:660px; color:#646b64; font-size:13px; line-height:1.75; }
+    .experience-summary { margin-top:22px; }
+    .experience-band { background:#e9ebe4; padding:37px; display:grid; grid-template-columns:1fr auto; gap:35px; align-items:center; border-radius:5px; }
+    .experience-band h3 { margin:0 0 9px; font:600 23px var(--display); letter-spacing:-.04em; }
+    .experience-band p { max-width:610px; margin:0; color:#687068; font-size:14px; line-height:1.7; }
+    .years { font:600 47px var(--display); letter-spacing:-.07em; white-space:nowrap; }.years small { display:block; text-align:right; font:10px var(--mono); letter-spacing:.08em; text-transform:uppercase; color:#70776f; }
+    .contact { display:grid; grid-template-columns:1fr auto; gap:40px; align-items:end; }
+    .contact h2 { max-width:680px; margin:0 0 20px; font:600 clamp(42px,6vw,72px)/1.02 var(--display); letter-spacing:-.075em; }
+    .contact p { margin:0; color:#727871; font-size:15px; }
+    footer { min-height:90px; display:flex; align-items:center; justify-content:space-between; color:#808680; font:10px var(--mono); }
+    .footer-links { display:flex; gap:20px; }.footer-links a:hover { color:var(--ink); }
+    @media (max-width:760px) {
+      .shell { width:min(100% - 40px, 560px); }.topbar { height:70px; }nav { gap:16px; }nav a:not(.nav-cta) { display:none; }
+      .hero { grid-template-columns:1fr; gap:10px; padding-block:74px 60px; min-height:unset; }.hero-art { min-height:350px; }.orbit { width:310px; }
+      .ticker-inner { justify-content:flex-start; flex-wrap:wrap; padding-block:22px; gap:15px 22px; }.ticker-label { width:100%; }
+      section.content-section { padding-block:78px; }.section-head,.about-grid { grid-template-columns:1fr; gap:20px; }.section-head { margin-bottom:36px; }
+      .principles { grid-template-columns:1fr; }.principle,.principle + .principle { padding:22px 0; border-left:0; border-bottom:1px solid var(--line); }.principle h3 { margin-top:13px; }
+      .project-grid { grid-template-columns:1fr; }.project-card { min-height:250px; }
+      .timeline-row { grid-template-columns:1fr; gap:10px; }
+      .experience-band { grid-template-columns:1fr; padding:26px; gap:22px; }.years { font-size:39px; }.years small { text-align:left; }
+      .contact { grid-template-columns:1fr; align-items:start; gap:27px; }.contact .button { width:max-content; }footer { gap:20px; align-items:flex-start; padding-block:25px; flex-direction:column; }
+    }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition:none !important; } }
+  </style>
 </head>
-
 <body>
-    <p>Hi, This is Santhana Krishnan</p>
-  <!-- <script src="js/scripts.js"></script> -->
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="shell topbar">
+    <a class="brand" href="#top" aria-label="Santhana Krishnan home"><span class="brand-mark">S</span><span>Santhana Krishnan</span></a>
+    <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#education">Education</a><a class="nav-cta" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="top">
+    <section class="shell hero" id="main" aria-labelledby="hero-title">
+      <div>
+        <div class="eyebrow"><span class="status-dot"></span> Software developer · Forward deployed engineering</div>
+        <h1 id="hero-title">Close to<br>the problem.<br><span>Built to ship.</span></h1>
+        <p class="hero-copy">I’m Santhana Krishnan, a software developer with 5+ years of experience building educational software and developer tools. I’m pursuing forward deployed engineering roles where I can get close to user workflows, connect systems, and turn real needs into working software.</p>
+        <div class="hero-actions"><a class="button" href="mailto:i@hashkrish.com">Email me <span class="arrow" aria-hidden="true">↗</span></a><a class="text-link" href="https://www.linkedin.com/in/santhanakrishnan-s/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="orbit"><span class="orbit-star">✳</span><span class="orbit-tag tag-one">CURIOSITY FIRST</span><span class="orbit-tag tag-two">BUILT TO LAST</span><span class="orbit-tag tag-three">DETAILS MATTER</span><div class="core">SK</div></div></div>
+    </section>
+    <div class="ticker"><div class="shell ticker-inner"><span class="ticker-label">How I approach the work</span><span class="ticker-item"><span>✳</span> Understand workflows</span><span class="ticker-item"><span>✳</span> Build practical integrations</span><span class="ticker-item"><span>✳</span> Python · Bash · Git</span><span class="ticker-item"><span>✳</span> Explain clearly</span></div></div>
+    <section class="shell content-section" id="work">
+      <div class="section-head"><div class="section-kicker">01 / Selected work</div><h2 class="section-title">Practical tools for <em>real-world workflows.</em></h2></div>
+      <div class="project-grid">
+        <article class="project-card"><span class="project-type">Cloud tooling</span><h3>TGCP</h3><p>A terminal-based project for working with Google Cloud Platform resources through a focused, keyboard-driven interface.</p><a class="project-link" href="https://github.com/hashkrish/tgcp" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a></article>
+        <article class="project-card"><span class="project-type">Developer tooling</span><h3>datastore-tui</h3><p>A terminal user interface project centered on making datastore workflows easier to inspect and operate from the command line.</p><a class="project-link" href="https://github.com/hashkrish/datastore-tui" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a></article>
+        <article class="project-card"><span class="project-type">Japanese language · Search</span><h3>Nihongo Search</h3><p>A search project for Japanese language content, designed to make relevant information easier to find.</p><a class="project-link" href="https://github.com/hashkrish/nihongo-search" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a></article>
+        <article class="project-card"><span class="project-type">Developer tooling</span><h3>req</h3><p>A developer tool focused on working with HTTP requests and API workflows.</p><a class="project-link" href="https://github.com/hashkrish/req" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a></article>
+      </div>
+    </section>
+    <section class="shell content-section" id="about">
+      <div class="section-head"><div class="section-kicker">02 / About</div><h2 class="section-title">Translate a real need <em>into useful software.</em></h2></div>
+      <div class="about-grid"><div class="about-aside">Software developer · Course instructor<br>Chennai, India</div><div class="about-main"><p>At IIT Madras, I contribute to an educational portal and administrative workflows while teaching computational thinking, Python, system commands, and data structures and algorithms. That work asks me to move between building software and helping people understand technical ideas.</p><p>I’m drawn to forward deployed engineering because it brings those parts together: learn how people actually work, find the useful technical path through the constraints, and build something that fits their environment.</p></div></div>
+    </section>
+    <section class="shell content-section" id="approach">
+      <div class="section-head"><div class="section-kicker">03 / How I work</div><h2 class="section-title">Understand the context. <em>Build for the situation.</em></h2></div>
+      <div class="principles">
+        <article class="principle"><span class="principle-number">01</span><h3>Learn the workflow</h3><p>Ask clear questions, understand the constraints, and define what a useful outcome looks like.</p></article>
+        <article class="principle"><span class="principle-number">02</span><h3>Build the smallest useful solution</h3><p>Use the right mix of code and integration to solve the immediate problem without adding needless complexity.</p></article>
+        <article class="principle"><span class="principle-number">03</span><h3>Close the loop</h3><p>Make the solution understandable, gather feedback, and carry what you learn into the next iteration.</p></article>
+      </div>
+    </section>
+    <section class="shell content-section" id="experience">
+      <div class="section-head"><div class="section-kicker">04 / Relevant experience</div><h2 class="section-title">Hands-on software work, <em>grounded in real users.</em></h2></div>
+      <div class="timeline">
+        <article class="timeline-row"><div class="timeline-date">JAN 2021 — PRESENT</div><div class="timeline-body"><h3>Software Developer · Course Instructor · Project Associate</h3><div class="timeline-org">Indian Institute of Technology Madras</div><p>Contribute to an educational portal and administrative workflows. Teach computational thinking, Python, system commands, and data structures and algorithms; analyze student performance to understand learning needs. Use Python, Bash, and Git, with exposure to Google Cloud App Engine, Firebase, and Compute.</p></div></article>
+        <article class="timeline-row"><div class="timeline-date">MAY 2019 — JUL 2019</div><div class="timeline-body"><h3>Engineering Intern</h3><div class="timeline-org">Grinntech Motors and Services</div><p>Performed structural, modal, and harmonic finite element analysis in ANSYS, following ARAI-048 standards.</p></div></article>
+      </div>
+      <div class="experience-band experience-summary"><div><h3>5+ years building practical software</h3><p>Software development, workflow support, and technical teaching at IIT Madras since 2021, alongside an earlier engineering analysis background.</p></div><div class="years">5+ <small>years experience</small></div></div>
+    </section>
+    <section class="shell content-section" id="education">
+      <div class="section-head"><div class="section-kicker">05 / Education</div><h2 class="section-title">An engineering foundation, <em>applied to software.</em></h2></div>
+      <div class="timeline">
+        <article class="timeline-row"><div class="timeline-date">2020</div><div class="timeline-body"><h3>M.E. Engineering Design</h3><div class="timeline-org">Anna University · College of Engineering Guindy, Chennai</div></div></article>
+        <article class="timeline-row"><div class="timeline-date">2018</div><div class="timeline-body"><h3>B.E. Mechanical Engineering</h3><div class="timeline-org">Government College of Engineering, Tirunelveli</div></div></article>
+      </div>
+    </section>
+    <section class="shell content-section" id="contact">
+      <div class="contact"><div><div class="section-kicker">06 / Get in touch</div><h2>Let’s solve something useful.</h2><p><a href="mailto:i@hashkrish.com">i@hashkrish.com</a> · I’d be glad to talk about forward deployed engineering opportunities.</p></div><div class="hero-actions"><a class="button" href="mailto:i@hashkrish.com">Email me <span class="arrow" aria-hidden="true">↗</span></a><a class="text-link" href="https://www.linkedin.com/in/santhanakrishnan-s/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div>
+    </section>
+  </main>
+  <footer class="shell"><span>© <span id="year">2026</span> Santhana Krishnan</span><div class="footer-links"><a href="mailto:i@hashkrish.com">i@hashkrish.com</a><a href="#top">Back to top ↑</a><a href="https://www.linkedin.com/in/santhanakrishnan-s/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
